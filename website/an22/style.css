@@ -1,0 +1,166 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+   
+  body {
+    font-size: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4A4A4A;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%);
+    background-size: cover;
+    min-height: 100vh;
+   
+  }
+  body .container {
+    padding: 0 16px;
+    min-width: 750px;
+    max-width: 1000px;
+    height: 100%;
+  }
+  body .container.mobile {
+    display: none;
+  }
+  body .container.desktop {
+    overflow: hidden;
+  }
+  body .container .title h1 {
+    height: 35px;
+    top: calc(50% - 35px/2 - 163px);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 50px auto  21px auto;
+  }
+  body .container .title p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 718px;
+  }
+  body .container .tasks {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body .container .tasks .tasks-grp-1, body .container .tasks .tasks-grp-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  body .container .tasks .tasks-grp-2 {
+    margin-top: 32px !important;
+  }
+  body .container .tasks .task-desc-title {
+    cursor: pointer;
+    display: flex;
+    width: 310px;
+  }
+  body .container .tasks .task-desc-title:hover .one {
+    color: #96df72;
+  }
+  body .container .tasks .task-desc-title:hover .two {
+    color: #7acbff;
+  }
+  body .container .tasks .task-desc-title:hover .three {
+    color: #f94f79;
+  }
+  body .container .tasks .task-desc-title:hover .four {
+    color: #3798f1;
+  }
+  body .container .tasks .task-desc-title div {
+    align-self: center;
+    margin-left: 10px;
+  }
+  body .container .tasks .desc {
+    width: 600px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  body .container .tasks .desc.one-desc-style {
+    margin-top: 10px;
+    border-top: 3px solid #96df72;
+    background-color: rgba(150, 223, 114, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  body .container .tasks .desc.two-desc-style {
+    margin-top: 10px;
+    border-top: 3px solid #7acbff;
+    background-color: rgba(122, 203, 225, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  body .container .tasks .desc.three-desc-style {
+    margin-top: 10px;
+    border-top: 3px solid #f94f79;
+    background-color: rgba(249, 79, 121, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  body .container .tasks .desc.four-desc-style {
+    margin-top: 10px;
+    border-top: 3px solid #3798f1;
+    background-color: rgba(55, 152, 241, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  @media screen and (max-width: 720px) {
+    body .container {
+      max-width: 375px;
+      min-width: 340px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    body .container.mobile {
+      display: block;
+    }
+    body .container.desktop {
+      display: none;
+    }
+    body .container .title h1 {
+      width: 280px;
+      height: 70px;
+      top: calc(50% - 70px/2 - 294.5px);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 35px;
+      text-align: center;
+      margin: 39px auto  35px auto;
+    }
+    body .container .title p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 343px;
+    }
+    body .container .tasks {
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 48px;
+      justify-content: center;
+    }
+    body .container .tasks .task-desc {
+      margin-bottom: 47px;
+    }
+    body .container .tasks .task-desc img {
+      max-width: 65px;
+      max-height: 65px;
+    }
+    body .container .tasks .task-desc .desc {
+      width: 300px;
+    }
+  }

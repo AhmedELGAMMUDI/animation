@@ -1,0 +1,42 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  /* Background layer with an image */
+  .backdrop {
+    margin: 0;
+    padding: 0;
+    background: url("https://images.pexels.com/photos/935786/pexels-photo-935786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+   height: 100%;
+   width: 100%;
+    overflow:hidden;
+  }
+      
+  /* Dark foreground layer, with white text, set to "multiply" mix blend mode */
+  .text {
+    color: white;
+    background: rgb(2, 59, 6);
+    mix-blend-mode: multiply;
+    font-size: 250px;
+    font-family: 'Erica One', cursive;
+    line-height: 175px;
+    margin: 0;
+    padding: 100px;
+    animation: slideIn 5s;
+    animation-fill-mode: forwards;
+    width: 200%;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      padding-left: 100%;
+  
+    }
+    100% {
+      padding-left: 100px;
+    }
+  }
